@@ -1,6 +1,34 @@
-# Technical stack 
+# Smart IoT Web Platform Technical Stack
 
-- Nodejs for the backend 
-- React jsx for the frontend
-- Postresql SQL databases
-- Neondb database
+## Frontend
+- Framework: React (v18) with React Router for routing
+- UI Components: Material UI (MUI v6) with custom theming
+- Data Visualization: Nivo charts library for metrics visualization
+- State Management:
+  - React Context API for application state
+  - React Query for data fetching and caching
+- Authentication: Clerk for user management
+- Real-time Updates: Socket.IO client for live data streams
+
+## Backend
+- Runtime* Node.js with Express for API server
+- Databases:
+  - Google BigQuery for IoT device data storage
+  - PostgreSQL via Neon for application data
+- Real-time Communication: Socket.IO for bidirectional updates
+- Cloud Services:
+  - Google Pub/Sub for messaging and notifications
+  - BigQuery for data warehousing
+- IoT Integration**:
+  - Chirpstack for LoRaWAN network server management
+  - Disruptive Technologies API for  IoT sensors
+
+## DevOps
+- Database Migrations: Custom migration system
+
+## Architecture
+The platform follows a multi-tenant architecture supporting organizations and their IoT applications, with features like:
+- Real-time device monitoring with threshold alerts
+- Interactive blueprint/map visualization
+- Time-series metrics visualization
+- Role-based access control
